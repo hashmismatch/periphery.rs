@@ -1,0 +1,9 @@
+[package]
+name = "orientation_detection"
+version = "0.1.0"
+authors = ["Rudi Benkovic <rudi.benkovic@gmail.com>"]
+
+[dependencies]
+periphery_core = { path = "../../periphery_core" }
+permutohedron = { version = "0.2.2", default-features = false }
+

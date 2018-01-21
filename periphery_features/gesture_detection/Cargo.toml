@@ -1,0 +1,14 @@
+[package]
+name = "gesture_detection"
+version = "0.1.0"
+authors = ["Rudi Benkovic <rudi.benkovic@gmail.com>"]
+
+[dependencies]
+periphery_core = {path = "../../periphery_core/" }
+signals = { path = "../../../signals.rs", default-features = false, optional = false }
+
+[dev-dependencies]
+csv = "1.0.0-beta.3"
+serde = "1"
+serde_derive = "1"
+gnuplot = "0.0.22"

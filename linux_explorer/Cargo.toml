@@ -1,0 +1,12 @@
+[package]
+name = "periphery_explorer"
+version = "0.1.0"
+authors = ["Rudi Benkovic <rudi.benkovic@gmail.com>"]
+
+[dependencies]
+csv = "1.0.0-beta.3"
+chrono = "0.4"
+periphery_flex = { path = "../periphery_flex/" }
+periphery_linux = { path = "../periphery_env/periphery_linux/" }
+terminal_termion = { path = "../../terminal-cli/terminal_termion/" }
+

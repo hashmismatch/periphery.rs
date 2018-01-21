@@ -1,0 +1,9 @@
+[package]
+name = "periphery_linux"
+version = "0.1.0"
+authors = ["Rudi Benkovic <rudi.benkovic@gmail.com>"]
+
+[dependencies]
+periphery_core = { path = "../../periphery_core" }
+i2cdev = {version = "0.3" }
+spidev = {version = "0.3" }

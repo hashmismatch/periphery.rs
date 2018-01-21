@@ -1,0 +1,17 @@
+0b01011000
+
+gesture led 
+
+12_5ma = ~38
+25ma = ~80 ... (down: 57)
+50ma = ~156
+100ma = 255 (saturated) ... (down: 220)
+
+
+gain settings @ 12_5ma
+
+times1: ~40
+times2: ~75
+times4: ~150
+
+

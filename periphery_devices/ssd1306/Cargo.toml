@@ -1,0 +1,13 @@
+[package]
+name = "ssd1306"
+version = "0.1.0"
+authors = ["Rudi Benkovic <rudi.benkovic@gmail.com>"]
+
+[dependencies]
+periphery_core = { path = "../../periphery_core/" }
+packed_struct = "^0.1.0"
+packed_struct_codegen = "^0.1.0"
+
+[lib]
+name = "ssd1306"
+path = "lib.rs"

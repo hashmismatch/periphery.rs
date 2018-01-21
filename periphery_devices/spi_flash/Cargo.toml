@@ -1,0 +1,13 @@
+[package]
+name = "spi_flash"
+version = "0.1.0"
+authors = ["Rudi Benkovic <rudi.benkovic@gmail.com>"]
+
+[dependencies]
+periphery_core = { path = "../../periphery_core/" }
+packed_struct = "^0.1.0"
+packed_struct_codegen = "^0.1.0"
+
+[lib]
+name = "spi_flash"
+path = "lib.rs"

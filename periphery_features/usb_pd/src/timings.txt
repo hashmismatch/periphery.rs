@@ -1,0 +1,96 @@
+// Type C Timing Parameters
+// Units are in ms * 10 to be ticked by a 0.1ms timer.
+#define tAMETimeout     1010 * 10
+#define tCCDebounceMin  100 * 10
+#define tCCDebounceNom  120 * 10
+#define tCCDebounceMax  200 * 10
+#define tPDDebounceMin  10 * 10
+#define tPDDebounceMax  20 * 10
+#define tAccDetect      100 * 10
+#define tDRP            80 * 10
+#define tDRPAdvert      30 * 10
+#define tDRPTransition  1 * 10
+#define tDRPTry         125 * 10
+#define tDRPTryWait     600 * 10
+#define tErrorRecovery  25 * 10
+
+#define tVBUSOn         275 * 10    // Max time from entry to Attached.SRC until VBUS reaches minimum vSafe5V
+#define tVBUSOff        650 * 10    // Max time from when the sink is detached until the source removes VBUS and reaches vSafe0V
+#define tVConnOn        2 * 10      // VConn should be applied prior to VBUS
+#define tVConnOnPA      100 * 10    // Max time from when Sink enters PoweredAccessory state until sourcing VCONN
+#define tVConnOff       35 * 10     // Max time to remove VCONN supply
+#define tSinkAdj        40 * 10     // Nominal time for the sink to reduce its consumption due to a change in Type-C current advertisement
+
+#define tDeviceToggle   3 * 10      // Duration in ms to wait before checking other CC pin for the device
+#define tTOG2           30 * 10     //When TOGGLE=1, time at which internal versions of PU_EN1=1 or PU_EN2=1 and PWDN1=PDWN2=0 selected to present externally as a DFP in the DRP toggle
+
+
+
+
+
+// tReceive = 1.1ms
+// tReceiverResponse = 15ms
+
+
+
+
+// USB PD Timing Parameters
+// Units are in ms * 10 to be ticked by a 0.1ms timer.
+#define TICK_SCALE_TO_MS        10
+
+#define tNoResponse             5000    * TICK_SCALE_TO_MS
+#define tSenderResponse         26      * TICK_SCALE_TO_MS
+#define tTypeCSendSourceCap     150     * TICK_SCALE_TO_MS
+#define tSinkWaitCap            2300    * TICK_SCALE_TO_MS
+#define tTypeCSinkWaitCap       500     * TICK_SCALE_TO_MS
+#define tSnkTransition          27      * TICK_SCALE_TO_MS
+#define tPSHardReset            30      * TICK_SCALE_TO_MS
+#define tPSTransition           500     * TICK_SCALE_TO_MS
+#define tPSSourceOffMin         750     * TICK_SCALE_TO_MS
+#define tPSSourceOffMax         920     * TICK_SCALE_TO_MS
+#define tPSSourceOffNom         800     * TICK_SCALE_TO_MS
+#define tPSSourceOnMin          390     * TICK_SCALE_TO_MS
+#define tPSSourceOnMax          480     * TICK_SCALE_TO_MS
+#define tPSSourceOnNom          30      * TICK_SCALE_TO_MS
+#define tVCONNSourceOn          100     * TICK_SCALE_TO_MS
+#define tBMCTimeout             5       * TICK_SCALE_TO_MS                      // (not defined by spec)
+#define tPRSwapBailout          5000    * TICK_SCALE_TO_MS                      // (not defined by spec)
+#define tBISTContMode           50      * TICK_SCALE_TO_MS
+#define tVSafe5V                3       * TICK_SCALE_TO_MS
+#define tSwapSourceStart        25      * TICK_SCALE_TO_MS
+
+
+#define nHardResetCount         2
+#define nRetryCount             3
+#define nCapsCount              50
+
+
+
+
+
+
+
+
+nAttentionCount
+10
+Section 6.6.8
+nBusyCount
+5
+Section 6.6.7
+nCapsCount
+50
+Section 6.6.4
+nDiscoverIdentityCount
+20
+Section 6.6.6
+nHardResetCount
+2
+Section 6.6.3
+nMessageIDCount
+7
+Section 6.6.1
+nRetryCount
+3
+Section 6.6.2
+
+

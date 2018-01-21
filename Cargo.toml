@@ -1,0 +1,20 @@
+[workspace]
+members = [
+    "periphery_core",
+    "periphery_flex",
+    
+    "periphery_features/orientation_detection/",
+    "periphery_features/buspirate_parser/"    
+]
+
+exclude = [
+    "linux_explorer",
+    "periphery_features/gesture_detection/",
+    "periphery_env/linux/",
+    "periphery_features/usb_pd/"
+]
+
+
+[patch.crates-io]
+packed_struct = { path="../packed_struct.rs/packed_struct" }
+packed_struct_codegen = { path="../packed_struct.rs/packed_struct_codegen" }

@@ -1,0 +1,7 @@
+[package]
+name = "autogain"
+version = "0.1.0"
+authors = ["Rudi Benkovic <rudi.benkovic@gmail.com>"]
+
+[dependencies]
+periphery_core = {path = "../../periphery_core/" }

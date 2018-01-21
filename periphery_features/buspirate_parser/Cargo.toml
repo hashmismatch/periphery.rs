@@ -1,0 +1,7 @@
+[package]
+name = "periphery_buspirate_parser"
+version = "0.1.0"
+authors = ["Rudi Benkovic <rudi.benkovic@gmail.com>"]
+
+[dependencies]
+nom = "^3.2"

@@ -1,0 +1,28 @@
+[package]
+name = "periphery_flex"
+version = "0.1.0"
+authors = ["Rudi Benkovic <rudi.benkovic@gmail.com>"]
+
+[dependencies]
+periphery_core = { path = "../periphery_core" }
+
+# devices
+apa102 = { path = "../periphery_devices/apa102/" }
+#apds_9960 = { path = "../periphery_devices/apds_9960/" }
+bmp180 = { path = "../periphery_devices/bmp180/" }
+bmp280 = { path = "../periphery_devices/bmp280/" }
+hmc5883 = { path = "../periphery_devices/hmc5883/" }
+invensense_mpu = { path = "../periphery_devices/invensense_mpu/" }
+ms5611 = { path = "../periphery_devices/ms5611/" }
+sht3x = { path = "../periphery_devices/sht3x/" }
+#spi_flash = { path = "../periphery_devices/spi_flash/" }
+ssd1306 = { path = "../periphery_devices/ssd1306/" }
+fusb302 = { path = "../periphery_devices/fusb302/" }
+
+# features
+# gesture_detection = { path = "../periphery_features/gesture_detection" }
+orientation_detection = { path = "../periphery_features/orientation_detection" }
+
+[lib]
+name = "periphery_flex"
+path = "lib.rs"
