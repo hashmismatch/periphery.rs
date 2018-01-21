@@ -15,6 +15,6 @@ exclude = [
 ]
 
 
-[patch.crates-io]
-packed_struct = { path="../packed_struct.rs/packed_struct" }
-packed_struct_codegen = { path="../packed_struct.rs/packed_struct_codegen" }
+#[patch.crates-io]
+#packed_struct = { path="../packed_struct.rs/packed_struct" }
+#packed_struct_codegen = { path="../packed_struct.rs/packed_struct_codegen" }
